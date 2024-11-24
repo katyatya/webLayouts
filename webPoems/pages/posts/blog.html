@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="img/icon.svg" class="logo_img"alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list" id="menu__list">
+					<li class="menu__item"><a href="index.html#authors" class="menu__item-link">Авторы</a></li>
+					<li class="menu__item"><a href="index.html" class="menu__item-link">Главная</a></li>
+					<li class="menu__item"><a href="" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="popup-bg">
+			<div class="popup">
+				<img class="close-popup" src="img/close.png" alt="">
+				<h2 class="title_popup">Регистрация</h2>
+				<form action="#" id="form" class="form__body">
+					<div class="inputBox">
+						<input type="text" placeholder="Имя" name="Username" required>
+					</div>
+					<div class="inputBox">
+						<input type="email" placeholder="Почта" name="email" required>
+					</div>
+					<div class="inputBox">
+						<input type="password" placeholder="Пароль" name="Password" required>
+					</div>
+					<div class="inputBox">
+						<input type="submit" class="btn-three" name="login" required>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<main>
+		<section class="main__blog" id="blog">
+			<div class="container">
+				<div class="main__blog-inner">
+					<ul class="main__blog__list">
+						<li class="main-blog__item">
+							<a href="page1.html" class="main__blog-main-link">
+								<img src="img/card1 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Списки для чтения: от дореволюционных до современных</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page5.html" class="main__blog-main-link">
+								<img src="img/card5.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Тополь в русской поэзии</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page6.html" class="main__blog-main-link">
+								<img src="img/page6.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Стихи о музыке</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page2.html" class="main__blog-main-link">
+								<img src="img/card2 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Стихотворения для детей</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page3.html" class="main__blog-main-link">
+								<img src="img/card3 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Стихотворения Максимилиана Волошина</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page4.html" class="main__blog-main-link">
+								<img src="img/card5 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Cоловей и роза в русской поэзии</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__list">
+					<li class="footer__list-title">Содержание</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Русккие поэты</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Главная страница</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Наш блог</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Чето</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Чето</p>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="footer__list">
+					<li class="footer__contact-title">Контакты</li>
+					<li class="footer__contact">
+						<a href="#" class="logo">
+							<img class="footer__icon" src="img/icon.svg" alt="стихи">
+						</a>
+					</li>
+					<li class="footer__contact">
+						<ul class="footer__contact-items">
+							<li class="footer__contact-tel"><a href="tel:+370680123456" class="footer__nav-phone">+370 680 123456</a></li>
+							<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

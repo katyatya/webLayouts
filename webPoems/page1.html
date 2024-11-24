@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="blog.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="img/icon.svg" class="logo_img"alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list" id="menu__list">
+					<li class="menu__item"><a href="index.html#authors" class="menu__item-link">Авторы</a></li>
+					<li class="menu__item"><a href="index.html" class="menu__item-link">Главная</a></li>
+					<li class="menu__item"><a href="blog.html" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="popup-bg">
+			<div class="popup">
+				<img class="close-popup" src="img/close.png" alt="">
+				<h2 class="title_popup">Регистрация</h2>
+				<form action="#" id="form" class="form__body">
+					<div class="inputBox">
+						<input type="text" placeholder="Имя" name="Username" required>
+					</div>
+					<div class="inputBox">
+						<input type="email" placeholder="Почта" name="email" required>
+					</div>
+					<div class="inputBox">
+						<input type="password" placeholder="Пароль" name="Password" required>
+					</div>
+					<div class="inputBox">
+						<input type="submit" class="btn-three" name="login" required>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<main class="main">
+		<div class="container">
+			<div class="page-blog__inner">
+				<h1 class="title page-blog__title">Списки книг из советских программ по литературе
+				</h1>
+				<div class="page-blog__images">
+					<img src="img/blog1_1.png" alt="" class="page-blog__img">
+					<img src="img/blog1_2.png" alt="" class="page-blog__img">
+					<img src="img/blog1_3.png" alt="" class="page-blog__img">
+				</div>
+				<div class="page-blog__text__inner">
+					<p class="page-blog__text">В СССР списки для чтения редактировали несколько раз. Программу по литературе 1920-х годов разработал литературовед Павел Сакулин. Он почти не менял дореволюционного переченя книг для школьников, добавив в него лишь несколько новых произведений — например, рассказы Антона Чехова​ и Максима Горького​, стихотворения Константина Бальмонта​, Валерия Брюсова​, Александра Блока​. Для каждого класса Сакулин составил не один список, а четыре. Чтобы у учителей и детей был выбор, какие книги читать.
+					</p>
+					<p class="page-blog__text">
+						В 1930-х в списки для чтения попали новые книги — произведения советских писателей Константина Федина, Лидии Сейфуллиной, Дмитрия Фурманова, Александра Фадеева​ и других. А вот выбирать из нескольких перечней педагоги и школьники теперь не могли. Филолог Михаил Павловец писал, что в те годы программа по литературе почти полностью совпадала с дореволюционными образцами. А книги советских писателей занимали в ней лишь 20 процентов. Однако учителям предлагали разбирать произведения иначе: объяснять детям, какой тяжелой была жизнь до революции​ и как все изменила советская власть. Филолог Владимир Литвинов в статье для журнала «Литература в школе» писал в 1938 году, как рассказывать биографии писателей: «История жизни писателя — это не только история его роста как личности, его писательской деятельности, но и его общественной деятельности, его борьбы против темных сил эпохи».
+					</p>
+					<p class="page-blog__text">
+						Программа по литературе изменилась вновь в 1960 году. Новые списки для чтения составили сотрудники Главного управления школ Министерства просвещения РСФСР. Раздел древнерусской литературы в очередной раз сократили. Теперь в восьмом классе школьники изучали только «Слово о полку Игореве»​. Зато в перечни попало еще больше советской литературы: «Как закалялась сталь»​ Николая Островского​, «Поднятая целина»​ Михаила Шолохова​, «Молодая гвардия» Александр Фадеева. Дети начали подробнее изучать творчество Александра Пушкина, Владимира Маяковского​, Льва Толстого и Максима Горького. Из-за этого списки литературы стали очень объемными. Учителя жаловались, что пройти все книги просто не получалось: например, на четыре тома «Войны и мира»​ Толстого выделяли только шесть уроков.
+					</p>
+				</div>
+				<cite><p class="page-blog__author">Автор: Анастасия Войко</p></cite>
+			</div>
+		</div>
+	</main>
+
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__list">
+					<li class="footer__list-title">Содержание</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Русккие поэты</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Главная страница</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Наш блог</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Чето</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Чето</p>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="footer__list">
+					<li class="footer__contact-title">Контакты</li>
+					<li class="footer__contact">
+						<a href="#" class="logo">
+							<img class="footer__icon" src="img/icon.svg" alt="стихи">
+						</a>
+					</li>
+					<li class="footer__contact">
+						<ul class="footer__contact-items">
+							<li class="footer__contact-tel"><a href="tel:89776508169" class="footer__nav-phone">89776508169</a></li>
+							<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

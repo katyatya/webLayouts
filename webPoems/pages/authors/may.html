@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="authors.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="img/icon.svg" alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html#authors" class="menu__item-link">Авторы</a></li>
+					<li class="menu__item"><a href="blog.html" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+
+
+	<main class="main">
+
+		<section class="biography">
+			<div class="container">
+				<h1 class="title biography__title">Владимир Маяковский</h1>
+				<div class="biography__content">
+					<img src="img/author-may.png" alt="" class="biography__img">
+					<p class="biography__text">Владимир Маяковский не сразу начал писать стихи — сначала он собирался стать художником и даже учился живописи. Слава поэта пришла к нему после знакомства с авангардистами, когда первые произведения молодого автора с восторгом встретил Давид Бурлюк. Футуристическая группа, «Сегодняшний лубок», «Левый фронт искусств», рекламные «Окна РОСТА» — Владимир Маяковский работал во множестве творческих объединений. А еще писал в газеты, выпускал журнал, снимал фильмы, создавал пьесы и ставил по ним спектакли.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="poems">
+			<div class="container">
+				<div class="poems__list">
+					<div class="poems__card">
+						<h3 class="poems__card-title">А вы могли бы?
+</h3>
+						<div data-content="text" class="poems__card-text">Я&nbsp;сразу смазал карту будня,<br>плеснувши краску из&nbsp;стакана;<br>я&nbsp;показал на&nbsp;блюде студня<br>косые скулы океана.<br>На&nbsp;чешуе жестяной рыбы<br>прочёл я&nbsp;зовы новых губ.<br>А&nbsp;вы<br>ноктюрн сыграть<br>могли бы<br>на&nbsp;флейте водосточных труб?</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">
+Вам!</h3>
+						<div data-content="text" class="poems__card-text">
+							Вам, проживающим за&nbsp;оргией оргию,<br>имеющим ванную и&nbsp;теплый клозет!<br>Как вам не&nbsp;стыдно о&nbsp;представленных к&nbsp;Георгию<br>вычитывать из&nbsp;столбцов газет?!<br>Знаете&nbsp;ли вы, бездарные, многие,<br>думающие нажраться лучше как, —<br>может быть, сейчас бомбой ноги<br>выдрало у&nbsp;Петрова поручика?..<br>Если&nbsp;б он, приведенный на&nbsp;убой,<br>вдруг увидел, израненный,<br>как вы&nbsp;измазанной в&nbsp;котлете губой<br>похотливо напеваете Северянина!<br>Вам&nbsp;ли, любящим баб да&nbsp;блюда,<br>жизнь отдавать в&nbsp;угоду?!<br>Я&nbsp;лучше в&nbsp;баре бл***м буду<br>подавать ананасную воду!
+						</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">Тучкины штучки
+</h3>
+						<div data-content="text" class="poems__card-text">
+							Плыли по&nbsp;небу тучки.<br>Тучек&nbsp;— четыре штучки:<br>от&nbsp;первой до&nbsp;третьей&nbsp;— люди;<br>четвертая была верблюдик.<br>К&nbsp;ним, любопытством объятая,<br>по&nbsp;дороге пристала пятая,<br>от&nbsp;нее в&nbsp;небосинем лоне<br>разбежались за&nbsp;слоником слоник.<br>И, не&nbsp;знаю, спугнула шестая&nbsp;ли,<br>тучки взяли все&nbsp;— и&nbsp;растаяли.<br>И&nbsp;следом за&nbsp;ними, гонясь и&nbsp;сжирав,<br>солнце погналось&nbsp;— желтый жираф.
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="popup-bg">
+			<div class="popup">
+				<img class="close-popup" src="img/close.png" alt="">
+				<h2 class="title_popup">Регистрация</h2>
+				<form action="#" id="form" class="form__body">
+					<div class="inputBox">
+						<input type="text" placeholder="Имя" name="Username" required>
+					</div>
+					<div class="inputBox">
+						<input type="email" placeholder="Почта" name="email" required>
+					</div>
+					<div class="inputBox">
+						<input type="password" placeholder="Пароль" name="Password" required>
+					</div>
+					<div class="inputBox">
+						<input type="submit" class="btn-three" name="login" required>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__list">
+					<li class="footer__list-title">Содержание</li>
+					<li class="footer__item">
+						<a href="#authors" class="footer__item-link">
+							<p class="footer__item-text">Русккие поэты</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="index.html" class="footer__item-link">
+							<p class="footer__item-text">Главная страница</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Наш блог</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#authors" class="footer__item-link">
+							<p class="footer__item-text">Писатели</p>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="footer__list">
+					<li class="footer__contact-title">Контакты</li>
+					<li class="footer__contact">
+						<a href="#" class="logo">
+							<img class="footer__icon" src="img/icon.svg" alt="стихи">
+						</a>
+					</li>
+					<li class="footer__contact">
+						<ul class="footer__contact-items">
+							<li class="footer__contact-tel"><a href="tel:89776508169" class="footer__nav-phone">89776508169</a></li>
+							<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+</html>

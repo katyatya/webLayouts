@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="#" class="logo">
+					<img src="img/icon.svg" alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__item">
+						<div class="dropdown">
+							<button class="dropbtn">Поэты</button>
+							<div class="dropdown-content">
+								<a href="push.html">А.Пушкин</a>
+								<a href="block.html">А.Блок</a>
+								<a href="tutchev.html">Ф.Тютчев</a>
+								<a href="anna.html">А.Ахматова</a>
+								<a href="may.html">В.Маяковский</a>
+								<a href="turgenev.html">И.Тургенев</a>
+							</div>
+						</div>
+					</li>
+
+					<li class="menu__item"><a href="blog.html" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+
+
+	<main class="main">
+		<section class="main__blog" id="blog">
+			<div class="container">
+				<div class="main__blog-inner">
+					<img src="img/think.png" class="thought">
+					<img src="img/cat.png" class="cat">
+					<h1 class="title blog-title">Новые статьи</h1>
+					<ul class="main__blog__list">
+						<li class="main-blog__item">
+							<a href="page1.html" class="main__blog-main-link">
+								<img src="img/card1 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Списки для чтения: от дореволюционных до современных</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page2.html" class="main__blog-main-link">
+								<img src="img/card2 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Стихотворения для детей</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page3.html" class="main__blog-main-link">
+								<img src="img/card3 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Стихотворения Максимилиана Волошина</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+						<li class="main-blog__item">
+							<a href="page4.html" class="main__blog-main-link">
+								<img src="img/card5 1.png" alt="" class="main-blog__item-img">
+								<div class="main-blog__item-content">
+									<h3 class="main-blog__item-title">Cоловей и роза в русской поэзии</h3>
+									<a href="" class="main-blog__item-link">Читать</a>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="popup-bg">
+			<div class="popup">
+				<img class="close-popup" src="img/close.png" alt="">
+				<h2 class="title_popup">Регистрация</h2>
+				<form action="#" id="form" class="form__body">
+					<div class="inputBox">
+						<input type="text" placeholder="Имя" name="Username" required>
+					</div>
+					<div class="inputBox">
+						<input type="email" placeholder="Почта" name="email" required>
+					</div>
+					<div class="inputBox">
+						<input type="password" placeholder="Пароль" name="Password" required>
+					</div>
+					<div class="inputBox">
+						<input type="submit" class="btn-three" name="login" required>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<section class="authors" id="authors">
+			<div class="container">
+				<div class="authors__inner">
+					<h2 class="authors__title">Русские поэты</h2>
+					<ul class="authors__list">
+						<li class="authors__list-item">
+							<a href="push.html" class="authors__list-link">
+								<img src="img/author-push.png" alt="" class="authors__list-item-img">
+								<div class="authors__list-link-inner">
+									<p class="authors__list-item-name">Александр Пушкин</p>
+									<blockquote class="authors__list-item-descr">"Я помню чудное мгновенье:
+										Передо мной явилась ты,.."<br></blockquote>
+									</div>
+								</a>
+							</li>
+							<li class="authors__list-item">
+								<a href="block.html" class="authors__list-link">
+									<img src="img/author-block.png" alt="" class="authors__list-item-img">
+									<div class="authors__list-link-inner">
+										<p class="authors__list-item-name">Александр Блок</p>
+										<blockquote class="authors__list-item-descr">"Панмонголизм! Хоть имя дико,
+											Но нам ласкает слух оно..."<br></blockquote>
+										</div>
+									</a>
+								</li>
+								<li class="authors__list-item">
+									<a href="tutchev.html" class="authors__list-link">
+										<img src="img/author-tyutchev.png" alt="" class="authors__list-item-img">
+										<div class="authors__list-link-inner">
+											<p class="authors__list-item-name">Федор Тютчев</p>
+											<blockquote class="authors__list-item-descr">"Умом — Россию не понять,
+												Аршином общим не измерить:.."<br></blockquote>
+											</div>
+										</a>
+									</li>
+									<li class="authors__list-item">
+										<a href="anna.html" class="authors__list-link">
+											<img src="img/author-anna.png" alt="" class="authors__list-item-img">
+											<div class="authors__list-link-inner">
+												<p class="authors__list-item-name">Анна Ахматова</p>
+												<blockquote class="authors__list-item-descr">"Нет, и не под чуждым небосводом,
+													И не под защитой чуждых крыл, —,.."<br></blockquote>
+												</div>
+											</a>
+										</li>
+										<li class="authors__list-item">
+											<a href="may.html" class="authors__list-link">
+												<img src="img/author-may.png" alt="" class="authors__list-item-img">
+												<div class="authors__list-link-inner">
+													<p class="authors__list-item-name">Владимир Маяковский</p>
+													<blockquote class="authors__list-item-descr">"Вам, проживающим за оргией оргию,
+														имеющим ванную и теплый клозет!.."<br></blockquote>
+													</div>
+												</a>
+											</li>
+											<li class="authors__list-item">
+												<a href="turgenev.html" class="authors__list-link">
+													<img src="img/author-turgenev.png" alt="" class="authors__list-item-img">
+													<div class="authors__list-link-inner">
+														<p class="authors__list-item-name">Иван Тургенев</p>
+														<blockquote class="authors__list-item-descr">"Утро туманное, утро седое,
+															Нивы печальные, снегом покрытые,.."<br></blockquote>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</main>
+
+							<footer class="footer" id="footer">
+								<div class="container">
+									<div class="footer__inner">
+										<ul class="footer__list">
+											<li class="footer__list-title">Содержание</li>
+											<li class="footer__item">
+												<a href="#authors" class="footer__item-link">
+													<p class="footer__item-text">Русккие поэты</p>
+												</a>
+											</li>
+											<li class="footer__item">
+												<a href="index.html" class="footer__item-link">
+													<p class="footer__item-text">Главная страница</p>
+												</a>
+											</li>
+											<li class="footer__item">
+												<a href="#blog" class="footer__item-link">
+													<p class="footer__item-text">Наш блог</p>
+												</a>
+											</li>
+										</ul>
+
+										<ul class="footer__list">
+											<li class="footer__contact-title">Контакты</li>
+											<li class="footer__contact">
+												<a href="#" class="logo">
+													<img class="footer__icon" src="img/icon.svg" alt="стихи">
+												</a>
+											</li>
+											<li class="footer__contact">
+												<ul class="footer__contact-items">
+													<li class="footer__contact-tel"><a href="tel:89776508169" class="footer__nav-phone">89776508169</a></li>
+													<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+												</ul>
+											</li>
+
+										</ul>
+
+									</div>
+								</div>
+							</footer>
+
+						</body>
+						</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="authors.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="img/icon.svg" alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html#authors" class="menu__item-link">Поэты</a></li>
+					<li class="menu__item"><a href="blog.html" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+
+
+	<main class="main">
+
+		<section class="biography">
+			<div class="container">
+				<h1 class="title biography__title">Александр Блок</h1>
+				<div class="biography__content">
+					<img src="img/author-block.png" alt="" class="biography__img">
+					<p class="biography__text">Александр Блок написал свои первые стихи еще до гимназии. В 14 лет он издавал рукописный журнал «Вестник», в 17 — ставил пьесы на сцене домашнего театра и играл в них, в 22 — опубликовал свои стихотворения в альманахе Валерия Брюсова «Северные цветы». Создатель поэтичного и таинственного образа Прекрасной Дамы, автор критических статей, Блок стал одним из самых известных поэтов Серебряного века.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="poems">
+			<div class="container">
+				<div class="poems__list">
+					<div class="poems__card">
+						<h3 class="poems__card-title">Летний вечер</h3>
+						<div data-content="text" class="">Последние лучи заката<br>Лежат на&nbsp;поле сжатой ржи.<br>Дремотой розовой объята<br>Трава некошеной межи.<br>Ни&nbsp;ветерка, ни&nbsp;крика птицы,<br>Над рощей&nbsp;— красный диск луны,<br>И&nbsp;замирает песня жницы<br>Среди вечерней тишины.<br>Забудь заботы и&nbsp;печали,<br>Умчись без цели на&nbsp;коне<br>В&nbsp;туман и&nbsp;в&nbsp;луговые дали,<br>Навстречу ночи и&nbsp;луне!</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">Ворона</h3>
+						<div data-content="text" class="poems__card-text">
+							Вот ворона на&nbsp;крыше покатой<br>Так с&nbsp;зимы и&nbsp;осталась лохматой…<br>А&nbsp;уж&nbsp;в&nbsp;воздухе&nbsp;— вешние звоны,<br>Даже дух занялся у&nbsp;вороны…<br>Вдруг запрыгала вбок глупым скоком,<br>Вниз на&nbsp;землю глядит она боком:<br>Что белеет под нежною травкой?<br>Вон желтеют под серою лавкой<br>Прошлогодние мокрые стружки…<br>Это все у&nbsp;вороны&nbsp;— игрушки,<br>И&nbsp;уж&nbsp;так-то ворона довольна,<br>Что весна, и&nbsp;дышать ей&nbsp;привольно!..
+						</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">Девушка пела в церковном хоре…</h3>
+						<div data-content="text" class="poems__card-text">Девушка пела в&nbsp;церковном хоре<br>О&nbsp;всех усталых в&nbsp;чужом краю,<br>О&nbsp;всех кораблях, ушедших в&nbsp;море,<br>О&nbsp;всех, забывших радость свою.<br>Так пел ее&nbsp;голос, летящий в&nbsp;купол,<br>И&nbsp;луч сиял на&nbsp;белом плече,<br>И&nbsp;каждый из&nbsp;мрака смотрел и&nbsp;слушал,<br>Как белое платье пело в&nbsp;луче.<br>И&nbsp;всем казалось, что радость будет,<br>Что в&nbsp;тихой заводи все корабли,<br>Что на&nbsp;чужбине усталые люди<br>Светлую жизнь себе обрели.<br>И&nbsp;голос был сладок, и&nbsp;луч был тонок,<br>И&nbsp;только высоко, у&nbsp;царских врат,<br>Причастный тайнам,&nbsp;— плакал ребенок<br>О&nbsp;том, что никто не&nbsp;придет назад.</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="popup-bg">
+			<div class="popup">
+				<img class="close-popup" src="img/close.png" alt="">
+				<h2 class="title_popup">Регистрация</h2>
+				<form action="#" id="form" class="form__body">
+					<div class="inputBox">
+						<input type="text" placeholder="Имя" name="Username" required>
+					</div>
+					<div class="inputBox">
+						<input type="email" placeholder="Почта" name="email" required>
+					</div>
+					<div class="inputBox">
+						<input type="password" placeholder="Пароль" name="Password" required>
+					</div>
+					<div class="inputBox">
+						<input type="submit" class="btn-three" name="login" required>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+	</main>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<ul class="footer__list">
+					<li class="footer__list-title">Содержание</li>
+					<li class="footer__item">
+						<a href="#authors" class="footer__item-link">
+							<p class="footer__item-text">Русккие поэты</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="index.html" class="footer__item-link">
+							<p class="footer__item-text">Главная страница</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="" class="footer__item-link">
+							<p class="footer__item-text">Наш блог</p>
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#authors" class="footer__item-link">
+							<p class="footer__item-text">Писатели</p>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="footer__list">
+					<li class="footer__contact-title">Контакты</li>
+					<li class="footer__contact">
+						<a href="#" class="logo">
+							<img class="footer__icon" src="img/icon.svg" alt="стихи">
+						</a>
+					</li>
+					<li class="footer__contact">
+						<ul class="footer__contact-items">
+							<li class="footer__contact-tel"><a href="tel:89776508169" class="footer__nav-phone">89776508169</a></li>
+							<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+</html>

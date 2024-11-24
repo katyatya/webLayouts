@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10 практика</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<link rel="stylesheet" href="main.css">
+	<script defer src="app.js" ></script>
+</head>
+
+<body onload="genrate()">
+	<header class="header">
+		<div class="container__header">
+			<h1 id="Main">Test</h1>
+			<img class="container__header-img"src="img/icon.png">
+			<nav class="nav_header">
+				<a class="header__link l1" href="#footer">Контакты</a>
+				<a class="header__link l2" href="#img__cat2">Коты</a>
+				<a class="header__link l3" href="#Main">Главная</a>
+			</nav>
+			<nav class="nav_notif">
+				<div class="icon" onmouseover="toggleNotifi()" >
+					<img src="img/bell.png" alt=""> <span>3</span>
+				</div>
+				<div class="notifi-box" id="box">
+					<h2>Уведомления <span>3</span></h2>
+					<div class="notifi-item">
+						<img src="img/pupu4.png" alt="img">
+						<div class="text">
+							<h4>Kate Moss</h4>
+							<p>@lorem ipsum dolor sit amet</p>
+						</div> 
+					</div>
+
+					<div class="notifi-item">
+						<img src="img/pupu2.png" alt="img">
+						<div class="text">
+							<h4>John Doe</h4>
+							<p>@lorem ipsum dolor sit amet</p>
+						</div> 
+					</div>
+
+					<div class="notifi-item">
+						<img src="img/pupu3.png" style="width: 40px" alt="img">
+						<div class="text">
+							<h4>Emad Ali</h4>
+							<p>@lorem ipsum dolor sit amet</p>
+						</div> 
+					</div>
+				</div>
+			</nav> 
+			<div class="burger">
+				<span></span>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	
+	<h3>Прочитайте статьи --> </h3>
+	<div class="wrapper__card">
+		<div class="card">
+			<img src="img/card1.jpeg" style="opacity:0.78;">
+			<div class="card-info">
+				<h1>Cписки для чтения: от дореволюционных до современных</h1>
+				<p>Что читатали советские школьники</p>
+				<a href="https://www.culture.ru/materials/257609/spiski-dlya-chteniya-ot-dorevolyucionnykh-do-sovremennykh" class="btn_-card">Читать</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="img/card2.png" style="opacity:0.78;">
+			<div class="card-info">
+				<h1 id="ll">Детские стихотворения</h1>
+				<p>Произвдения Александра Пушкина и Агнии Барто</p>
+				<a href="https://www.culture.ru/themes/257737/stikhotvoreniya-dlya-detei" class="btn_-card">Читать</a>
+			</div> 
+		</div>
+
+		<div class="card">
+			<img src="img/card3.png" style="opacity:0.78;">
+			<div class="card-info">
+				<h1>Стихотворения Максимилиана Волошина</h1>
+				<p>О любви, Париже и даче в Коктебеле</p>
+				<a href="https://www.culture.ru/themes/257755/stikhotvoreniya-maksimiliana-voloshina" class="btn_-card">Читать</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<section id="Reg" class="section2">
+		<div class="box">
+			<div class="square" style="--i:0;"></div>
+			<div class="square" style="--i:1;"></div>
+			<div class="square" style="--i:2;"></div>
+			<div class="square" style="--i:3;"></div>
+			<div class="square" style="--i:4;"></div>
+			<div class="container">
+				<div class="form">
+					<h2>Регистрация</h2>
+					<form onsubmit="return printmsg()">
+						<div class="form__grid">
+							<div class="inputBox">
+								<input type="text" placeholder="Имя" name="Username" autocomplete="off">
+							</div>
+							<div class="inputBox">
+								<input type="text" placeholder="Фамилия" name="Userfam">
+							</div>
+							<div class="inputBox">
+								<input type="tel" placeholder="Телефон" name="Number">
+							</div>
+							<div class="inputBox">
+								<input type="password" placeholder="Пароль" name="Password">
+							</div>
+							<div class="inputBox" id="submit">
+								<button id="hui">Send</button>
+							</div>
+							<div class="captcha">
+								<div class="example">
+									<div id="firstNumber"></div>
+									<div class="plus">+</div>
+									<div id="secondNumber">...</div>
+									<div class="equal">=</div>
+								</div>
+								<div class="inputBox">
+									<input type="tel" placeholder="капча" id="tell">
+								</div>
+								<p id="key"></p>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</div>
+<h2 class="horrors__title">ЧТО ПОЧИТАТЬ НА ХЭЛЛОУИН</h2>
+</div>
+
+<section class="cards-anim">
+	<div class="card-anim card-anim1" id="card-anim1" onmouseout="toggleCard1()" onmouseover="toggleCard1()">
+		
+		<h2>Эверс Х.Х. Кошмары</h2>
+		 <br>В книге собраны мрачные рассказы немецкого писателя Ханса Эверса о самых тёмных сторонах человеческой природы. Каждую пятницу кто-то из постояльцев гостиницы «Стевенс» совершает самоубийство, а рядом с трупом видят чёрного паука с фиолетовыми пятнами. В мексиканских джунглях обитают индейцы с синей кожей. Талантливая женщина прославилась как актриса, писательница и художница, но её искусство несёт людям смерть.
+	</div>
+	<div class="card-anim card-anim2" id="card-anim2" onmouseout="toggleCard2()" onmouseover="toggleCard2()">
+		<h2>Нэвилл А. Дом теней</h2>
+		<br>После смерти гениального кукольника и таксидермиста наследники решают продать его работы. Коллекция хранится в Красном доме, особняке мастера, куда приезжает оценщица Кэтрин. Дом находится в странной деревне, где нет ни одного жителя, но Кэтрин этого не замечает: увидев изысканные и мрачные творения кукольника, она понимает, что работы принесут миллионы. Но сначала женщине предстоит найти выход из странного Красного дома, а ещё узнать, что коллекция куда чудовищнее, чем кажется, а жители деревни уехали не по своей воле.
+	</div>
+	<div class="card-anim card-anim3" id="card-anim3" onmouseout="toggleCard3()" onmouseover="toggleCard3()">
+		<h2>Стокер Б.Дракула</h2>
+		<br>Стряпчий Джонатан Харкер отправляется в Трансильванию, чтобы заключить сделку с неким графом Дракулой. Но приехав в замок посреди безлюдной глуши Карпатских гор, мужчина понимает, что стал пленником вампира. Удача оказывается на стороне Харкера, и он сбегает, вот только ужасы на этом не заканчиваются. Чтобы справиться с кошмаром наяву, герой обращается к доктору Ван Хельсингу, специалисту по оккультной магии.
+
+
+	</div>
+	
+</section>
+<div class="grid_cont1">
+	<div class="items item1">
+		<div class="item1__content">
+			<p>Нэш О.</p>
+			<p>Туда отсюда не попасть</p>
+			<span>Когда-то отношения между полами были предельно просты и естественны:Мужчины были мужественны, женщины – женственны.
+				Женщины к мужчинам относились по-разному – к одним, что называется, всей душой, а другие у них бывали в опале,но женщинам не приходило в голову требовать, чтобы мужчины их понимали…
+			</span>
+
+			<img src="https://cdn.img-gorod.ru/0x2400/nomenclature/26/294/2629433.jpg"  align="left">
+			<p>В стихах американца Огдена Нэша – на первый взгляд шутливых, но вместе с тем философских – сочетаются парадоксальность и традиция, новаторская форма и «вечные» темы. Наследник традиционной английской «поэзии нонсенса», сам он считал, что при сравнительно малом количестве рифм в общем объёме стихотворения, они должны быть максимально точны – как в звуковом, так и в зрительном подобии. Поэтому Нэш зачастую ломал орфографию и свободно переиначивал форму слов в угоду смыслам.</p>
+			
+		</div>
+	</div>	
+	<div class="items item2">
+		<div class="item2__content">
+			
+		</div>
+	</div>	
+	<div class="items item3">
+		<div class="item2__content">
+			<p>Бродский И.</p>
+			<p>Власть стихий. Стихотворения. Эссе</p>
+			<span>Не выходи из комнаты, не совершай ошибку.Зачем тебе Солнце, если ты куришь Шипку?За дверью бессмысленно всё, особенно – возглас счастья.Только в уборную – и сразу же возвращайся…</span>
+			<img src="https://cdn.img-gorod.ru/0x2400/nomenclature/25/120/2512026.jpg" align="left">
+		</div>
+	</div>	
+	<div class="items item4">
+		<div class="item2__content">
+			<p>Затонская М.</p>
+			<p>Дом с птицами</p>
+			<span>Что во мне моего и есть ли моё вообще.Мама учила выбирать одежду из натуральных тканей,папа – прощать людей за то, что они болваны. Дедушка твердил про добро и духовную силу,бабушка в ванной мне руки мыла, о том о сём бубнил из комнаты «Электрон»…
+			</span>
+			<img src="https://cdn.img-gorod.ru/620x1000/nomenclature/27/836/2783626.jpg" align="left">
+		</div>
+	</div>	
+	<div class="items item5">
+		<div class="item2__content">
+			<p>Воденников Д.</p>
+			<p>Стихи обо всём</p>
+			<span>Так дымно здесь
+				и свет невыносимый,что даже рук своих не различить –
+				кто хочет жить так, чтобы быть любимым?
+				Я – жить хочу, так чтобы быть любимым!
+			Ну так как ты – вообще не стоит – жить…</span>
+			<img src="https://cdn.img-gorod.ru/0x2400/nomenclature/27/860/2786092-1.jpg" align="left">
+		</div>
+	</div>	
+	<div class="items item6">
+		<div class="item2__content">
+			<p>Бахарев А.</p>
+			<p>Нежный человек</p>
+			<span>Лето: ничего личного –Лето перенасыщено Шумными листьями, тыщами 
+				Истин различных.
+				Осень: ничего лишнего –
+				Единоличная истина,
+			Осень почти божественна –Но беспомощна.</span>
+			<img src="https://cdn.img-gorod.ru/0x2400/nomenclature/27/687/2768797_2.jpg" align="left">
+			
+		</div>
+	</div>	
+	<div class="items item7">
+		<div class="item2__content">
+			<p>Попробуйте подобрать рифму к словам «жаворонок», «выхухоль», «туловище», «набережная». Если вам это удалось – поздравляем! Вы – уникальный поэт. Потому что считается, что в русском языке рифм к этим словам не существует.</p>
+			
+		</div>
+	</div>	
+</div>
+<section class="poem21">
+	<h3 class="poem21__title">
+		Двадцать первое. Ночь. Понедельник
+	</h3>
+	 <p class="poem21__text">
+		Двадцать первое. Ночь. Понедельник.<br />
+		Очертанья столицы во мгле.<br />
+		Сочинил же какой-то бездельник,<br />
+		Что бывает любовь на земле.<br />
+	</p>
+	<p class="poem21__text">
+		И от лености или со скуки<br />
+		Все поверили, так и живут:<br />
+		Ждут свиданий, боятся разлуки<br />
+		И любовные песни поют.<br />
+	</p>
+	<p class="poem21__text">
+		Но иным открывается тайна,<br />
+		И почиет на них тишина…<br />
+		Я на это наткнулась случайно<br />
+		И с тех пор всё как будто больна.<br />
+	</p>
+	<p style="color: grey"><i>1917 г.</i></p>
+
+	<div class="like" >
+		<button class="btn__like" onclick="like(this)">
+			<img src="img/heart.png">
+			<div id="nraw">нравится</div>
+		</button>	
+	</div>
+
+	
+</section>
+
+<div class="video_cats">
+	<video id="myVideo" width="600" height="315" src="img/videocat.mp4" frameborder="0" modestbranding="1" allowfullscreen></video>
+</div>
+
+<div class="btn_box">
+	<button class="btn_cat1" onclick="playVid()" type="button">Play Video</button>
+	<button class="glow-on-hover" onclick="pauseVid()" type="button">Pause Video</button><br> 
+</div>
+
+<span><h4>Читатели --></h4></span>
+<div id="img__cat2" class="gallery">
+	<div class="gallery__cats">
+		<img class="gallery__cats-item" src="https://i.pinimg.com/564x/74/36/1d/74361de2873e1c5cffd020e3687ea565.jpg">
+	</div>
+
+	<div class="gallery__cats">
+		<img class="gallery__cats-item"  src="https://i.pinimg.com/564x/a2/7c/7a/a27c7a1b6bdf96c8593b4a3f1403d20b.jpg">
+	</div>
+	<div class="gallery__cats">
+		<img class="gallery__cats-item" src="https://i.pinimg.com/564x/7b/0e/e6/7b0ee66fcd96b69c4fcc65aebe7b8c75.jpg">
+	</div>
+	<div class="gallery__cats">
+		<img class="gallery__cats-item" src="https://i.pinimg.com/564x/30/cc/93/30cc936554eb861f8a4a15bc90e4837b.jpg">
+	</div>
+	<div class="gallery__cats">
+		<img class="gallery__cats-item" src="https://i.pinimg.com/564x/28/d9/26/28d926993a77dab676e9c62c19e51364.jpg">
+	</div>
+	<div class="gallery__cats">
+		<img class="gallery__cats-item" src="https://i.pinimg.com/564x/ef/b5/2c/efb52cdd342b00d90b9fb19c2b63e088.jpg">
+	</div>
+</div>
+
+</main>
+
+<footer id="footer">
+	<div class="social">
+		<h3>Контакты</h3>
+		<a class="social__icon instagram" href="#">
+			<img src="img/inst.png">
+		</a>
+		<a class="social__icon facebook" href="#">
+			<img src="img/tg.png">
+		</a>
+		<a class="social__icon git" href="#">
+			<img src="img/vk.png">
+		</a>
+		
+	</div>
+	<div class="about-us">
+		<h3>О нас</h3>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, dignissimos.Maxime, ratione nulla incidunt a fuga quia adipisci. Dolor nesciunt quia, omnis, quo vero possimus architecto. Ex temporibus tenetur neque.</span>
+	</div>
+	<div class="ssilky">
+		<h3>Ссылки</h3>
+		<br><p><a href="#Main">начало страницы</a>
+			<br><p><a href="#Reg">регистрация</a>
+			</div>
+		</footer>
+
+
+	</body>
+	</html>

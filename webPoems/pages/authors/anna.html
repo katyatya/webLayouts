@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="authors.css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="app.js"></script>
+	<title>Сборник стихов</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="img/icon.svg" alt="стихи">
+				</a>
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html#authors" class="menu__item-link">Поэты</a></li>
+					<li class="menu__item"><a href="blog.html" class="menu__item-link">Блог</a></li>
+					<li class="menu__item"><a href="#footer" class="menu__item-link">Контакты</a></li>
+					<li class="menu__item1"><a href="#" class="menu__item-link open-popup"><img src="img/user.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+
+
+	<main class="main">
+
+		<section class="biography">
+			<div class="container">
+				<h1 class="title biography__title">Анна Ахматова</h1>
+				<div class="biography__content">
+					<img src="img/author-anna.png" alt="" class="biography__img">
+					<p class="biography__text">Анна Ахматова писала о себе, что родилась в один год с Чарли Чаплином, «Крейцеровой сонатой» Толстого и Эйфелевой башней. Она стала свидетелем смены эпох — пережила две мировые войны, революцию и блокаду Ленинграда. Свое первое стихотворение Ахматова написала в 11 лет — с тех пор и до конца жизни она не переставала заниматься поэзией.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="poems">
+			<div class="container">
+				<div class="poems__list">
+					<div class="poems__card">
+						<h3 class="poems__card-title">Сжала руки под темной вуалью…</h3>
+						<div data-content="text" class="poems__card-text">Сжала руки под темной вуалью…<br>«Отчего ты&nbsp;сегодня бледна?»<br>—&nbsp;Оттого, что я&nbsp;терпкой печалью<br>Напоила его допьяна<br> Как забуду? Он&nbsp;вышел, шатаясь,<br>Искривился мучительно рот…<br>Я&nbsp;сбежала, перил не&nbsp;касаясь,<br>Я&nbsp;бежала за&nbsp;ним до&nbsp;ворот Задыхаясь, я&nbsp;крикнула: «Шутка<br>Все, что было. Уйдешь, я&nbsp;умру».<br>Улыбнулся спокойно и&nbsp;жутко<br>И&nbsp;сказал мне: «Не&nbsp;стой на&nbsp;ветру».</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">Песня последней встречи</h3>
+						<div data-content="text" class="poems__card-text">Так беспомощно грудь холодела,<br>Но&nbsp;шаги мои были легки.<br>Я&nbsp;на&nbsp;правую руку надела<br>Перчатку с&nbsp;левой руки.<br>Показалось, что много ступеней,<br>А&nbsp;я&nbsp;знала&nbsp;— их&nbsp;только три!<br>Между кленов шепот осенний<br>Попросил: «Со&nbsp;мною умри!<br>Я&nbsp;обманут моей унылой,<br>Переменчивой, злой судьбой».<br>Я&nbsp;ответила: «Милый, милый!<br>И&nbsp;я&nbsp;тоже. Умру с&nbsp;тобой…»<br>Это песня последней встречи.<br>Я&nbsp;взглянула на&nbsp;темный дом.<br>Только в&nbsp;спальне горели свечи<br>Равнодушно-желтым огнем
+						</div>
+					</div>
+					<div class="poems__card">
+						<h3 class="poems__card-title">Мужество</h3>
+						<div data-content="text" class="poems__card-text">Мы&nbsp;знаем, что ныне лежит на&nbsp;весах<br>И&nbsp;что совершается ныне.<br>Час мужества пробил на&nbsp;наших часах,<br>И&nbsp;мужество нас не&nbsp;покинет.<br>Не&nbsp;страшно под пулями мертвыми лечь,<br>Не&nbsp;горько остаться без крова,<br>И&nbsp;мы&nbsp;сохраним тебя, русская речь,<br>Великое русское слово.<br>Свободным и&nbsp;чистым тебя пронесем,<br>И&nbsp;внукам дадим, и&nbsp;от&nbsp;плена спасем<br>Навеки.</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="popup-bg">
+				<div class="popup">
+					<img class="close-popup" src="img/close.png" alt="">
+					<h2 class="title_popup">Регистрация</h2>
+					<form action="#" id="form" class="form__body">
+						<div class="inputBox">
+							<input type="text" placeholder="Имя" name="Username" required>
+						</div>
+						<div class="inputBox">
+							<input type="email" placeholder="Почта" name="email" required>
+						</div>
+						<div class="inputBox">
+							<input type="password" placeholder="Пароль" name="Password" required>
+						</div>
+						<div class="inputBox">
+							<input type="submit" class="btn-three" name="login" required>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<ul class="footer__list">
+						<li class="footer__list-title">Содержание</li>
+						<li class="footer__item">
+							<a href="#authors" class="footer__item-link">
+								<p class="footer__item-text">Русккие поэты</p>
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="index.html" class="footer__item-link">
+								<p class="footer__item-text">Главная страница</p>
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="" class="footer__item-link">
+								<p class="footer__item-text">Наш блог</p>
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="#authors" class="footer__item-link">
+								<p class="footer__item-text">Писатели</p>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="footer__list">
+						<li class="footer__contact-title">Контакты</li>
+						<li class="footer__contact">
+							<a href="#" class="logo">
+								<img class="footer__icon" src="img/icon.svg" alt="стихи">
+							</a>
+						</li>
+						<li class="footer__contact">
+							<ul class="footer__contact-items">
+								<li class="footer__contact-tel"><a href="tel:89776508169" class="footer__nav-phone">89776508169</a></li>
+								<li class="footer__contact-email"><a href="mailto:info@tealuxe.com" class="footer__nav-email">info@tealuxe.com</a></li>
+							</ul>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</footer>
+
+	</body>
+	</html>
